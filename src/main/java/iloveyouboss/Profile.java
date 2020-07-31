@@ -1,6 +1,5 @@
 package iloveyouboss;
 
-import javax.swing.plaf.BorderUIResource;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -46,5 +45,9 @@ public class Profile {
 
     public int score() {
         return score;
+    }
+
+    public void add(Answer answer) {
+        answers.put(answer.getQuestionText(), answer);
     }
 }
